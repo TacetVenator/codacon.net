@@ -1,0 +1,156 @@
+<html>
+  <head>
+    <title>Codacon.net - Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap" rel="stylesheet">
+      <style>
+      @import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap');
+      @font-face {
+      font-family: 'Sora';
+      src: url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap') format('sans-serif');
+      font-weight: 600;
+    }
+      /* Style the container for each product */
+      .product-container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      /* Style the content of each product */
+      .product-content {
+        max-width: 600px;
+        text-align: center;
+      }
+      /* Style the invisible button  */
+      .invisible-shortcut-btn {
+        opacity: 0;
+        pointer-events: none;
+      }
+      
+      /* Set the background colors for each product */
+      #title {
+        background-color: #a0d2eb;
+      }
+      #product1 {
+        background-color: #e5eaf5;
+      }
+      #product2 {
+        background-color: #a28089;
+      }
+      #product3 {
+        background-color: #edf756;
+      }
+      #product4 {
+        background-color: #ffa8B6;
+      }
+      #product5 {
+        background-color: #a28089;
+      }
+      
+      /* Style the button Ready Player One? Play */
+      #alternate-1-btn {
+      background-color: #e5eaf5;
+      color: #FFF;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    /* Style the alternate button */
+      #alternate-2-btn {
+      background-color: #a28089;
+      color: #FFF;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    /* Style the alternate button */
+        #alternate-3-btn {
+      background-color: #edf756;
+      color: #FFF;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+      /* Style the alternate button */
+      #alternate-4-btn {
+      background-color: #ffa8B6;
+      color: #FFF;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+      /* Style the button inside the product */
+      #alternate-4-btn {
+      background-color: #a0d2eb;
+      color: #FFF;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+      /* Responsive design */
+      @media only screen and (max-width: 768px) {
+        .product-container {
+          height: auto;
+        }
+      }
+    </style>
+    <script src="./script.js"></script>
+  </head>
+  <body style="font-family:'Sora', sans-serif;">
+    <div class="product-container" id="title">
+        <div class="product-content">
+          <h2>CODACON.net</h2>
+          <button id="alternate-1-btn" onclick="scrollToNextSection()">Next</button>
+        </div>
+      </div>
+    <div class="product-container" id="product1">
+      <div class="product-content">
+        <h2>AR Game</h2>
+        <p>The goal of <b>Tower of Ice cream</b> is to build the tallest tower possible without it collapsing. Players must carefully stack blocks on top of each other while trying to maintain balance and stability. The higher the tower, the more difficult it becomes to keep it from toppling over.</p>
+        <h3>Ready Player One?</h3>
+        <p><button id="alternate-4-btn" onclick="redirectToNewTab('https://www.8thwall.com/codacon/magicsky')">Play!</button></p>
+        <p><button id="invisible-shortcut-btn" onclick="redirectToNewTab('https://8th.io/t/bemxp7yv')"></button></p>
+        <br><p><button id="alternate-2-btn" onclick="scrollToNextSection()">Next</button></p>
+      </div>
+    </div>
+    <div class="product-container" id="product2">
+      <div class="product-content">
+        <h2>InspirationBot - Telegram Bot</h2>
+        <p>Do you ever find yourself in need of a little motivation or inspiration during your chats? Look no further than InspirationBot. This innovative bot uses advanced natural language processing algorithms to analyze the context of your conversations and provide you with personalized, uplifting quotes and messages that are tailored to the topics you're discussing.
+
+          Whether you're talking about your career goals, relationships, or just feeling a little down, InspirationBot has you covered. With a vast database of inspiring quotes from famous thinkers, writers, and leaders, as well as original messages crafted by our team of expert writers, this bot is always ready to provide you with the perfect words of encouragement.
+          
+          Simply add InspirationBot to your Telegram chat, and it will automatically scan your conversations for keywords and topics that could benefit from a little extra motivation. You can also customize the bot to focus on specific themes or topics that are most important to you.
+          
+          So why wait? Add InspirationBot to your Telegram chat today and start receiving personalized, uplifting quotes that will help you stay inspired and motivated no matter what life throws your way!</p>
+        <p></p><button id="alternate-3-btn" onclick="scrollToNextSection()">Next</button></p>
+      </div>
+    </div>
+    <div class="product-container" id="product3">
+      <div class="product-content">
+        <h2>Social Media Publisher bot</h2>
+        <p>Introducing the Social Media Publisher bot - the ultimate tool for anyone looking to streamline their social media publishing process. Say goodbye to the hassle of logging in to multiple platforms and manually posting your content - with our bot, you can easily publish your posts to all of your favorite social media platforms with just a few clicks.
+
+          Our bot supports a wide range of platforms, including Twitter, Instagram, Facebook, TikTok, and Reddit, so you can easily reach your audience wherever they are. Simply create your post within the bot's easy-to-use interface, add your images or videos, and select the platforms you want to publish to. The bot will automatically format your post for each platform, ensuring that your content looks great no matter where it's being shared.
+          
+          In addition to streamlining your publishing process, our bot also offers advanced scheduling and analytics features. Schedule your posts to go out at specific times, ensuring that your content is reaching your audience when they're most active. And with detailed analytics reports, you can track engagement and growth across all of your social media channels, allowing you to refine your content strategy and optimize your reach.
+          
+          So whether you're a social media manager, influencer, or just someone looking to grow your personal brand, the Social Media Publisher bot is the perfect tool for taking your social media presence to the next level. Try it today and see the difference for yourself!</p>
+        <p></p><button id="alternate-1-btn" onclick="scrollToFirstSection()">Next</button></p>
+      </div>
+    </div>
+  </body>
+</html>
